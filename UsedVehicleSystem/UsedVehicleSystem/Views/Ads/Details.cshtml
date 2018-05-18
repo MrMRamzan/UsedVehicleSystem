@@ -1,0 +1,42 @@
+﻿@model UsedVehicleSystem.Models.Ads
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ads</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdCategory)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

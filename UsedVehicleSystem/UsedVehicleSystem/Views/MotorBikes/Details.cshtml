@@ -1,0 +1,76 @@
+﻿@model UsedVehicleSystem.Models.MotorBike
+
+@{
+    ViewBag.Title = "Details";
+}
+<br />
+<h2 style="margin-top:30px;">Details</h2>
+
+<div>
+    <h4>MotorBike</h4>
+    <hr />
+    <img style="width:80%;height:40%;" class="img-responsive" src="@Html.DisplayFor(model => model.imageUrl)" />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estimatedPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estimatedPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.drivenInKms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.drivenInKms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.documents)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.documents)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.condition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.condition)
+        </dd>
+
+    </dl>
+</div>
+<p style="font-size:large;">
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")*@
+    <span class="btn btn-info" id="btnMeraApna" style="margin-left:50%;">@Html.ActionLink("Confirm Order", "Create", "Users", new { id = Model.ID }, new { }) </span>
+</p>

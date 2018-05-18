@@ -1,0 +1,145 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,select,textarea{
+    max-width: 280px;
+}
+/*.container{
+    max-width:100%;
+}*/
+#MyButton a{
+   text-decoration:none;
+   color:white;
+   font-size:large;
+}
+    
+/*---------
+	ANIMATION img                        
+----------------------------*/
+
+@keyframes slidy {
+	 20% { margin-left:    0%; }
+	 25% { margin-left: -100%; }
+	 45% { margin-left: -100%; }
+	 50% { margin-left: -200%; }
+	 70% { margin-left: -200%; }
+	 75% { margin-left: -300%; }
+	 95% { margin-left: -300%; }
+	100% { margin-left: -400%; }
+}
+@-webkit-keyframes slidy {
+	 20% { margin-left:    0%; }
+	 25% { margin-left: -100%; }
+	 45% { margin-left: -100%; }
+	 50% { margin-left: -200%; }
+	 70% { margin-left: -200%; }
+	 75% { margin-left: -300%; }
+	 95% { margin-left: -300%; }
+	100% { margin-left: -400%; }
+}
+@-moz-keyframes slidy {
+	 20% { margin-left:    0%; }
+	 25% { margin-left: -100%; }
+	 45% { margin-left: -100%; }
+	 50% { margin-left: -200%; }
+	 70% { margin-left: -200%; }
+	 75% { margin-left: -300%; }
+	 95% { margin-left: -300%; }
+	100% { margin-left: -400%; }
+}
+@-o-keyframes slidy {
+	 20% { margin-left:    0%; }
+	 25% { margin-left: -100%; }
+	 45% { margin-left: -100%; }
+	 50% { margin-left: -200%; }
+	 70% { margin-left: -200%; }
+	 75% { margin-left: -300%; }
+	 95% { margin-left: -300%; }
+	100% { margin-left: -400%; }
+}
+
+@media only screen and (max-width: 1040px) and (min-width: 640px) {
+
+	#content-slider .th h1 { font-size: 1.2em; line-height: 1em; }
+
+	#content-slider .th p { font-size: 1.0em; line-height: 0.7em; }
+
+	#content-slider .th a { font-size: 0.55em; line-height: 0.55em; }
+
+}
+
+/*@media only screen and (max-width: 940px) { 
+
+	#content-slider .slider [class*='title-'] { margin-bottom: -20%; }
+
+}*/
+		
+@media only screen and (max-width: 640px) {
+
+	#content-slider .slider [class*='title-'] { display: none; }
+
+	#content-slider span.first { display: none; }
+
+	#content-slider span.th { width: 98%; cursor: default; margin-top: 37%; }
+
+	#content-slider span.th img { float: left; width: 40%; margin-right: 5%; padding: .7% 0 0 0; }
+
+	#content-slider .th>[class*='title-'] { right: 0%; width: 55%; text-align: left; }
+
+	#content-slider #b-2 { margin: 5% auto 0 auto; }
+
+	#content-slider #b-3, #content-slider #b-4 { margin-top: 5%; }
+
+	#content-slider span#b-2:focus { opacity: 1; } span#b-2:focus ~ span#b-5 { display: none; }
+	#content-slider span#b-3:focus { opacity: 1; } span#b-3:focus ~ span#b-5 { display: none; }
+	#content-slider span#b-4:focus { opacity: 1; } span#b-4:focus ~ span#b-5 { display: none; }
+
+	#content-slider #control { display: block; }
+
+	#content-slider #main { padding: 1% 0; width: 100%; margin-top: 29.2%; z-index: 10; position: absolute; text-align: center; background: rgba(0, 0, 0, 0.71); }
+
+	#content-slider label.first { display: inline-block; margin-bottom: 0; }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	
+	#content-slider #main { padding: 1% 0; width: 100%; /*bottom: -15.5em;*/ z-index: 10; position: absolute; text-align: center; background: rgba(0, 0, 0, 0.71); }
+
+	#content-slider label.first { margin-bottom: 0; }
+	/*#content-slider span.th { display: none; }*/
+
+	#content-slider span.th img { display: none; }
+
+	#content-slider .th>[class*='title-'] { width: 98%; margin: 2% auto; position: relative; text-align: center; }
+
+	#content-slider #control { margin-top: 12%; }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}

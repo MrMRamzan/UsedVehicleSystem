@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="container">
+    <div class="row">
+        <div class="dropdown" style="margin-left:88%;margin-top:20px;margin-bottom:2px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="color:blue;margin-top:5px;font-weight:bold;">
+                SELECT AUTO
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">@Html.ActionLink("CAR", "Create", "Cars")</a><br/>
+                <a class="dropdown-item" href="#">@Html.ActionLink("MOTOR BIKE", "Create", "MotorBikes")</a><br />
+                <a class="dropdown-item" href="#">@Html.ActionLink("CYCLE", "Create", "Bikes")</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example" data-slide-to="1"></li>
+            <li data-target="#carousel-example" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="#"><img src="~/Images/slider2.jpeg" style="width: 1349px;height: 600px;" /></a>
+                <div class="carousel-caption">
+                    <h3>Pak Dealer</h3>
+                    <p>we provide the best</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#"><img src="~/Images/slider3.jpg" style="width: 1349px;height: 600px;" /></a>
+                <div class="carousel-caption">
+                    <h3>Pak Dealer</h3>
+                    <p>we provide the best</p>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#"><img src="~/Images/slider4.jpeg" style="width: 1349px;height: 600px;" /></a>
+                <div class="carousel-caption">
+                    <h3>Pak Dealer</h3>
+                    <p>we provide the best</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>

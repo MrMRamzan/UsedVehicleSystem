@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "MyAdsList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2 style="margin-top:30px;">Your Created Ads</h2>
+<hr />
+<!--////////this is the list of car ads of single user ////////// -->
+<h3>Cars Ads</h3>
+@foreach (var item in ViewBag.Cars)
+{
+
+    <dl class="dl-horizontal">
+        <dt>
+            AutoImage
+        </dt>
+        <dd><img style="width:30%;height:20%;" class="img-responsive" src="@item.imageUrl" /></dd>
+        <dt>
+            Title
+        </dt>
+        <dd>
+            @item.title
+        </dd>
+        <dt>
+            Model
+        </dt>
+        <dd>
+            @item.model 
+        </dd>
+        <dt>
+            Make
+        </dt>
+        <dd>
+            @item.make
+        </dd>
+        <dt>
+            Estimated Price
+        </dt>
+        <dd>
+            @item.estimatedPrice
+        </dd>
+        <dt>
+            Driven In Km's
+        </dt>
+        <dd>
+            @item.drivenInKms
+        </dd>
+        <dt>
+            Documents
+        </dt>
+        <dd>
+            @item.documents
+        </dd>
+        <dt>
+            condition
+        </dt>
+        <dd>
+            @item.condition
+        </dd>
+    </dl>
+    <p style="font-size:large;">
+        @Html.ActionLink("Edit", "Edit", "Cars", new { id = item.ID }, new { })|
+        @Html.ActionLink("Delete", "Delete", "Cars", new { id = item.ID }, new { })
+        
+    </p>
+}
+    <!--//////// This is list of motorbike ad of single user  ////////-->
+    <h3>MotorCycle Ads</h3>
+    @foreach (var item2 in ViewBag.MotorBikes)
+    {
+
+        <dl class="dl-horizontal">
+            <dt>
+                AutoImage
+            </dt>
+            <dd><img style="width:30%;height:20%;" class="img-responsive" src="@item2.imageUrl" /></dd>
+            <dt>
+                Title
+            </dt>
+            <dd>
+                @item2.title
+            </dd>
+            <dt>
+                Model
+            </dt>
+            <dd>
+                @item2.model
+            </dd>
+            <dt>
+                Make
+            </dt>
+            <dd>
+                @item2.make
+            </dd>
+            <dt>
+                Estimated Price
+            </dt>
+            <dd>
+                @item2.estimatedPrice
+            </dd>
+            <dt>
+                Driven In Km's
+            </dt>
+            <dd>
+                @item2.drivenInKms
+            </dd>
+            <dt>
+                Documents
+            </dt>
+            <dd>
+                @item2.documents
+            </dd>
+            <dt>
+                condition
+            </dt>
+            <dd>
+                @item2.condition
+            </dd>
+        </dl>
+        <p style="font-size:large;">
+            @Html.ActionLink("Edit", "Edit", "MotorBikes", new { id = item2.ID }, new { })|
+            @Html.ActionLink("Delete", "Delete", "MotorBikes", new { id = item2.ID }, new { })
+
+        </p>
+    }
+ <!--//////// This is the list of cycle ads of  single user that he/she has submitted ////////-->
+        <h3>Cycle Ads</h3>
+        @foreach (var item3 in ViewBag.Bikes)
+        {
+
+            <dl class="dl-horizontal">
+                <dt>
+                    AutoImage
+                </dt>
+                <dd><img style="width:30%;height:20%;" class="img-responsive" src="@item3.imageUrl" /></dd>
+                <dt>
+                    Title
+                </dt>
+                <dd>
+                    @item3.title
+                </dd>
+                <dt>
+                    Model
+                </dt>
+                <dd>
+                    @item3.model
+                </dd>
+                <dt>
+                    Make
+                </dt>
+                <dd>
+                    @item3.make
+                </dd>
+                <dt>
+                    Estimated Price
+                </dt>
+                <dd>
+                    @item3.estimatedPrice
+                </dd>
+                <dt>
+                    Documents
+                </dt>
+                <dd>
+                    @item3.documents
+                </dd>
+                <dt>
+                    condition
+                </dt>
+                <dd>
+                    @item3.condition
+                </dd>
+            </dl>
+            <p style="font-size:large;">
+                @Html.ActionLink("Edit", "Edit", "Bikes", new { id = item3.ID }, new { })|
+                @Html.ActionLink("Delete", "Delete", "Bikes", new { id = item3.ID }, new { })
+
+            </p>
+ }
+
+    @* <div class="well-sm">
+            <div class="row">
+               <span class="col-md-4">@item.title   </span>
+                <span class="col-md-4"><img class="img img-responsive" src="@item.imageUrl" /></span>
+            </div>
+        </div>  *@
+
+
+@*<h3>Bike Ads</h3>
+@foreach (var item in ViewBag.Bikes)
+{
+    <div class="well-sm">
+        <div class="row">
+            <span class="col-md-4">@item.title   </span>
+            <span class="col-md-4"><img class="img img-responsive" width="100" height="100" src="@item.imageUrl" /></span>
+        </div>
+    </div>
+}
+<h3>Motorbike Ads</h3>
+@foreach (var item in ViewBag.MotorBikes)
+{
+    <div class="well-sm">
+        <div class="row">
+            <span class="col-md-4">@item.title   </span>
+            <span class="col-md-4"><img class="img img-responsive" width="100" height="100" src="@item.imageUrl" /></span>
+        </div>
+    </div>
+}*@
